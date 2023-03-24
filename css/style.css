@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#200016, #10001f);
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#m {
+    width: 100px;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+.actv {
+    background: #fff;
+    color: #200016;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #200016, transparent);
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(70px);
+}
+
+.mhd {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    transform: translateY(-130px);
+}
+
+.content {
+    color: #fff;
+    padding: 30px;
+}
+
+.content h2 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.content p {
+    margin: 10px;
+}
+
+@media (max-width: 570px) {}
+
+@media (max-width: 870px) {}
+
+.kodfon-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    ;
+}
+
+.kodfon-galeri>div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.kodfon-galeri>div:hover {
+    flex: 5;
+}
+
+.clock {
+    background: no-repeat;
+    background-size: cover;
+    width: 90vmin;
+    height: 90vmin;
+    position: relative;
+}
+
+.hour,
+.minute,
+.second,
+.cap,
+.digital {
+    transform-origin: center top;
+    border-radius: 1vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.hour {
+    width: 2vmin;
+    height: 24vmin;
+    background-color: cyan;
+    margin-left: -1vmin;
+}
+
+.minute {
+    width: 1.2vmin;
+    height: 38vmin;
+    background-color: magenta;
+    margin-left: -.6vmin;
+}
+
+.second {
+    width: .6vmin;
+    height: 40vmin;
+    background-color: orange;
+    margin-left: -.3vmin;
+}
+
+.cap {
+    width: 4vmin;
+    height: 4vmin;
+    background-color: violet;
+    margin-left: -2vmin;
+    margin-top: -2vmin;
+    border-radius: 50%;
+}
+
+.digital {
+    display: block;
+    transform: translate(-50%, calc(-50% + 12vmin));
+    font: bold 5vmin "Courier New", monospace;
+    background-color: #c5cbf4;
+    color: #4c4b4a;
+    padding: 0 1vmin;
+}
